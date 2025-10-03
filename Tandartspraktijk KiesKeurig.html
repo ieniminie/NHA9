@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor posuere 
+            urna a commodo. Morbi suscipit orci dui, id gravida metus fermentum ac. Donec 
+            lobortis tortor nulla, a consectetur lorem cursus et. In sed arcu imperdiet, 
+            vestibulum libero a, consectetur odio. Nulla vulputate turpis erat, vel rhoncus 
+            nibh porttitor quis. Fusce blandit pharetra quam, non egestas enim faucibus a. 
+            Maecenas finibus, velit at aliquam semper, nisl nisi varius mauris, vel dapibus 
+            purus mi at nulla. Ut convallis est massa, non gravida lorem tristique in. Morbi 
+            viverra consequat ipsum, in finibus dolor mattis ut. Sed semper, mi id ultricies 
+            tristique, massa odio maximus erat, aliquet porttitor ipsum lectus vitae dolor.
+        </p>
+        <figure>
+        <img src="afbeeldingen_les_7/20250915_203550.jpg" alt="gebit" title="gebit" width="300">
+        <img src="afbeeldingen_les_7/20250915_203732.jpg" alt="tandpasta" title="tandpasta" width="300">
+        <img src="afbeeldingen_les_7/20250915_203748.jpg" alt="fluor_aid" title="fluor" width="300">
+        </figure>
+        <h1>Inschrijven</h1>
+        <form id="contactform" action="https://formspree.io/f/mgvnabqn" method="post">
+             <fieldset>
+                <legend><h2>Persoonlijke gegevens</h2></legend>
+                    <label for="achternaam"><b>Achternaam:</b></label>
+                    <input id="achternaam" type="text" name="achternaam">
+                    <br><br>
+                    <label for="voorletters"><b>Voorletters:</b></label>
+                    <input id="voorletters" type="text" name="voorletters">
+                    <br><br>
+                    <input type="radio" name="geslacht" value="man"><b>Man</b>
+                    <input type="radio" name="geslacht" value="vrouw"><b>Vrouw</b>
+                    <br><br>
+                    <label for="adres"><b>Adres:</b></label>
+                    <input id="adres" type="text" name="adres">
+                    <br><br>
+                    <label for="plaatsnaam"><b>Plaatsnaam:</b></label>
+                    <input id="plaatsnaam" type="text" name="plaatsnaam">
+                    <br><br>
+                    <label for="email"><b>Email:</b></label>
+                    <input id="email" type="text" name="email">
+                    <br><br>
+                    <label for="geboortedatum"><b>Uw geboortedatum:</b></label>
+                    <input id="geboortedatum" type="date" name="datum" max="2080-12-31">
+            </fieldset>
+            <fieldset>
+                <legend><h2>Beschrijving van de klachten</h2></legend>
+                    <b>Waar heeft u klachten</b>
+                    <input type="checkbox" name="klachten" value="boven">Boven
+                    <input type="checkbox" name="klachten" value="onder">Onder
+                    <input type="checkbox" name="klachten" value="rechts">Rechts
+                    <input type="checkbox" name="klachten" value="links">Links
+                    <input type="checkbox" name="klachten" value="voor">Voor
+                    <br><br>
+                    <b>Upload hieronder een foto van uw probleem</b>
+                    <br><br>
+                    <input type="file" id="foto" name="foto" accept="jpg" multiple="1">
+            </fieldset>
+            <fieldset>
+                <legend><h2>Toelichting van de klachten</h2></legend>
+                    <b>Licht uw klachten hieronder toe</b>
+                    <br><br>
+                    <label for="Toelichting van klachten"></label>
+                    <textarea name="bericht" maxlength="1500" placeholder="Uw bericht"></textarea>
+                    <br><br>
+                    <label for="startdatum"><b>Startdatum klachten</b></label>
+                    <input id="startdatum" type="date" name="startdatum" max="2081-12-31">
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Verzend">
+        </form>
+    </body>
+</html>
